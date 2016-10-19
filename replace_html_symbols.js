@@ -1,4 +1,4 @@
-var replace_html_symbols = function(){
+var Replace_html_symbols = function(){
 	
 	function replace_chars(str){
 		/*obj with words to replace*/
@@ -22,6 +22,6 @@ var replace_html_symbols = function(){
 }();
 
 $(function(){
-	replace_html_symbols.replace();
+	Replace_html_symbols.replace();
 });
 
