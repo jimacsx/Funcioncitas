@@ -1,5 +1,5 @@
 var Replace_html_symbols = function(){
-	
+	/*check if a string has a word of chars obj and replace*/
 	function replace_chars(str){
 		/*obj with words to replace*/
 		var chars = {
