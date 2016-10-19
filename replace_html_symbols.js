@@ -1,6 +1,9 @@
-var replace_chars = function(str){
+var replace_html_symbols = function(){
+	
+	function replace_chars(str){
+		/*obj with words to replace*/
 		var chars = {
-			"&aacute;": "á",
+			"&aacute;" : "á",
 			"&eacute;" : "é",
 			"&iacute;" : "í",
 			"&oacute;" : "ó",
@@ -11,4 +14,14 @@ var replace_chars = function(str){
 			str = str.replace(new RegExp(c.replace(), 'g'), chars[c]);
 		}
 		return str;
-}
+	}
+	
+	return{
+		replace:replace_chars
+	}
+}();
+
+$(function(){
+	replace_html_symbols.replace();
+});
+
